@@ -7,7 +7,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-promed-green-50 text-promed-blue p-4 fixed w-full top-0 shadow-sm border-b border-promed-green-200 z-10 sm:bg-sky-500">
+    <nav className="bg-green-50 text-promed-blue p-4 fixed w-full top-0 shadow-sm  border-promed-green-200 z-10 sm:bg-sky-500">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center space-x-2">
@@ -29,7 +29,7 @@ const Navbar = () => {
 
         {/* Mobile menu button */}
         <button
-          className="sm:hidden p-2 text-promed-green-700 focus:outline-none"
+          className="sm:hidden p-2 text-green-700 focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -64,7 +64,7 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile dropdown with animation */}
+      {/* Mobile dropdown with animation + new colors */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -72,13 +72,13 @@ const Navbar = () => {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="sm:hidden overflow-hidden mt-4"
+            className="sm:hidden overflow-hidden mt-2 rounded-lg shadow-md bg-sky-300 text-white"
           >
-            <ul className="flex flex-col space-y-2 pb-4">
+            <ul className="flex flex-col space-y-3 p-4">
               <li>
                 <Link
                   to="/"
-                  className="hover:underline"
+                  className="hover:text-promed-green-200"
                   onClick={() => setIsOpen(false)}
                 >
                   Home
@@ -87,7 +87,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to="/services"
-                  className="hover:underline"
+                  className="hover:text-promed-green-200"
                   onClick={() => setIsOpen(false)}
                 >
                   Services
@@ -96,7 +96,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to="/about"
-                  className="hover:underline"
+                  className="hover:text-promed-green-200"
                   onClick={() => setIsOpen(false)}
                 >
                   About Us
@@ -105,7 +105,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to="/contact"
-                  className="hover:underline"
+                  className="hover:text-promed-green-200"
                   onClick={() => setIsOpen(false)}
                 >
                   Contact Us
@@ -113,9 +113,11 @@ const Navbar = () => {
               </li>
             </ul>
 
-            <button className="w-full bg-promed-blue text-white px-4 py-2 rounded-md font-semibold hover:bg-promed-blue/90">
-              Book Appointment
-            </button>
+            <div className="p-4 border-t border-promed-green-500">
+              <button className="w-full bg-promed-blue text-white px-4 py-2 rounded-md font-semibold hover:bg-promed-blue/90">
+                Book Appointment
+              </button>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
