@@ -1,4 +1,4 @@
-import heroImg from "../assets/hero-image.jpg";
+import hero from "../assets/hero-image.jpg";
 
 const Hero = () => {
   return (
@@ -41,7 +41,7 @@ const Hero = () => {
           </div>
           <div className="relative">
             <img
-              src={heroImg}
+              src={hero}
               alt="Wellness care"
               className="w-full h-auto rounded-lg shadow-lg"
             />
