@@ -5,7 +5,7 @@ import Home from "./pages/Home.jsx";
 import ServicesPage from "./pages/ServicesPage.jsx";
 import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
-import WhatsAppButton from "./pages/WhatsAppButton.jsx";
+import WhatsAppButton from "./pages/WhatsappButton.jsx";
 
 function App() {
   return (
