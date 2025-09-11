@@ -4,10 +4,7 @@ const Hero = () => {
   return (
     <section className="pt-4 pb-16 bg-white relative overflow-hidden">
       {" "}
-      {/* Adjusted pt for navbar offset */}
-      {/* Decorative leaves - Hidden on small screens for simplicity */}
       <div className="absolute top-0 right-0 opacity-10 hidden md:block">
-        {/* SVG as before */}
         <svg
           className="w-24 h-24"
           fill="none"

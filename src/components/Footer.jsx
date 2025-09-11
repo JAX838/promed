@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-20 grid md:grid-cols-3 gap-12">
         {/* Company Info */}
         <div>
-          <h2 className="text-2xl font-bold mb-4">AVA Nurse</h2>
+          <h2 className="text-2xl font-bold mb-4">PROMED</h2>
           <p className="text-gray-300 mb-6">
             Dedicated to providing compassionate care, professional training,
             and healthcare support services with excellence.
