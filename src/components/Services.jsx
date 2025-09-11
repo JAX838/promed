@@ -1,11 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
-import img1 from "../assets/1.JPG";
-import img2 from "../assets/2.JPG";
-import img3 from "../assets/3.JPG";
-import img4 from "../assets/4.JPG";
-import img5 from "../assets/storage.JPG";
-import img6 from "../assets/patient1.JPG";
+import img1 from "../assets/1.jpg";
+import img2 from "../assets/2.jpg";
+import img3 from "../assets/3.jpg";
+import img4 from "../assets/4.jpg";
+import img5 from "../assets/storage.jpg";
+import img6 from "../assets/patient1.jpg";
 const services = [
   {
     title: "First Aid and Emergency Response",
