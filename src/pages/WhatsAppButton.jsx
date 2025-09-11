@@ -1,6 +1,6 @@
 import React from "react";
 
-const WhatsappButton = () => {
+const WhatsAppButton = () => {
   return (
     <a
       href="https://wa.me/254743379955"
@@ -21,4 +21,4 @@ const WhatsappButton = () => {
   );
 };
 
-export default WhatsappButton;
+export default WhatsAppButton;
