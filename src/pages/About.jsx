@@ -52,9 +52,13 @@ const About = () => {
             To be the world’s leading nurse center by nurses for nurses.
           </p>
           <p className="text-gray-200 mb-6 relative">
-            We specialize in the delivery of quality patient care using nursing
-            professionals, medical doctors, and other relevant healthcare
-            professionals.
+            At PROMED, we provide integrated healthcare and wellness solutions
+            that enhance safety, performance, and well-being in sports, events,
+            communities, and individual care. With a focus on innovation,
+            professionalism, and compassion, our team of experts delivers
+            reliable medical services tailored to diverse needs whether
+            protecting athletes, supporting large gatherings, empowering
+            communities, or offering personalized care.
           </p>
           <button className="bg-blue-400 text-white px-5 py-2 rounded-md hover:bg-blue-500 transition relative">
             Discover More

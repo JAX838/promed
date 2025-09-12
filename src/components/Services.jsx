@@ -6,6 +6,7 @@ import img3 from "../assets/3.jpg";
 import img4 from "../assets/4.jpg";
 import img5 from "../assets/storage.jpg";
 import img6 from "../assets/patient1.jpg";
+import { Link } from "react-router-dom";
 const services = [
   {
     title: "First Aid and Emergency Response",
@@ -34,7 +35,6 @@ const services = [
   },
 ];
 
-// Animation variants for stagger effect
 const container = {
   hidden: { opacity: 0 },
   show: {
@@ -51,8 +51,6 @@ const item = {
 const Services = () => {
   return (
     <section className="py-16 px-6 lg:px-20 bg-white">
-      {/* Title */}
-      <p className="text-center text-sky-600 text-lg">OUR SERVICES</p>
       <motion.h2
         className="text-3xl font-serif lg:text-4xl font-semibold text-center text-[#1f3a56] mb-45 mt-20"
         initial={{ opacity: 0, y: -30 }}
@@ -60,10 +58,9 @@ const Services = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
       >
-        Center of Excellence
+        OUR SERVICES
       </motion.h2>
 
-      {/* Grid */}
       <motion.div
         className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"
         variants={container}
@@ -88,7 +85,7 @@ const Services = () => {
               </h3>
               {service.button && (
                 <button className="mt-3 bg-blue-400 px-4 py-1 rounded-md hover:bg-blue-500 transition">
-                  Learn more
+                  <Link to="/contact">Learn more</Link>
                 </button>
               )}
             </div>

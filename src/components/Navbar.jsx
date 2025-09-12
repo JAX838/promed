@@ -24,7 +24,9 @@ const Navbar = () => {
               d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
             />
           </svg>
-          <h1 className="text-xl font-bold text-promed-green-700">PROMED</h1>
+          <Link to="/">
+            <h1 className="text-xl font-bold text-promed-green-700">PROMED</h1>
+          </Link>
         </div>
 
         {/* Mobile menu button */}
@@ -58,10 +60,14 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
-
-        <button className="hidden sm:block bg-promed-blue text-white px-4 py-2 rounded-md font-semibold hover:bg-promed-blue/90">
+        <a
+          href="https://wa.me/254115294467"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hidden sm:block bg-promed-blue text-white px-4 py-2 rounded-md font-semibold hover:bg-promed-blue/90"
+        >
           Book Appointment
-        </button>
+        </a>
       </div>
 
       {/* Mobile dropdown with animation + new colors */}
