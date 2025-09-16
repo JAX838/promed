@@ -51,7 +51,7 @@ const About = () => {
           <p className="font-semibold mb-4 relative">
             To be the world’s leading nurse center by nurses for nurses.
           </p>
-          <p className="text-gray-200 mb-6 relative">
+          <p className="text-gray-200 mb-6 relative max-w-prose">
             At PROMED, we provide integrated healthcare and wellness solutions
             that enhance safety, performance, and well-being in sports, events,
             communities, and individual care. With a focus on innovation,

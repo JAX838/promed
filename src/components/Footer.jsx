@@ -1,9 +1,10 @@
 import React from "react";
 import { Facebook, Twitter, Linkedin, Mail, Phone, MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#1f3a56] text-white pt-16">
+    <footer className="bg-sky-500 text-white pt-16">
       <div className="max-w-7xl mx-auto px-6 lg:px-20 grid md:grid-cols-3 gap-12">
         {/* Company Info */}
         <div>
@@ -39,24 +40,24 @@ const Footer = () => {
           <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
           <ul className="space-y-3 text-gray-300">
             <li>
-              <a href="#about" className="hover:text-blue-400 transition">
+              <Link to="/about" className="hover:text-blue-400 transition">
                 About Us
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#services" className="hover:text-blue-400 transition">
+              <Link to="/services" className="hover:text-blue-400 transition">
                 Services
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#why-choose" className="hover:text-blue-400 transition">
+              <Link to="/why-choose" className="hover:text-blue-400 transition">
                 Why Choose Us
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#contact" className="hover:text-blue-400 transition">
+              <Link to="/contact" className="hover:text-blue-400 transition">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -66,10 +67,10 @@ const Footer = () => {
           <h3 className="text-xl font-semibold mb-4">Contact Info</h3>
           <ul className="space-y-4 text-gray-300">
             <li className="flex items-center gap-3">
-              <Phone className="w-5 h-5 text-blue-400" /> +254 743379955
+              <Phone className="w-5 h-5 text-blue-400" /> +254 115294467
             </li>
             <li className="flex items-center gap-3">
-              <Mail className="w-5 h-5 text-blue-400" /> mongarebrian@gmail.com
+              <Mail className="w-5 h-5 text-blue-400" /> promedhc07@gmail.com
             </li>
             <li className="flex items-center gap-3">
               <MapPin className="w-5 h-5 text-blue-400" /> Nairobi, Kenya

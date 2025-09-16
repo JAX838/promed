@@ -1,69 +1,84 @@
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import hero from "../assets/hero-image.jpg";
-import logo from "../assets/logo.png";
 
 const Hero = () => {
+  // Words to rotate in red
+  const words = [
+    "Home care nursing",
+    "First Aid and Emergency Response",
+    "Nutrition",
+    "Advanced Wound Care",
+    "Medical equipment & accessories shop",
+  ];
+  const [index, setIndex] = useState(0);
+
+  // Change word every 2.5s
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % words.length);
+    }, 2500);
+    return () => clearInterval(interval);
+  }, [words.length]);
+
   return (
-    <section className="pt-4 pb-16  relative overflow-hidden bg-[#C8E6C8]">
-      <div className="absolute top-0 right-0 opacity-10 hidden md:block">
-        <svg
-          className="w-24 h-24"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={0.5}
-            d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 
-               3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 
-               0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 
-               12a9 9 0 11-18 0 9 9 0 0118 0z"
-          />
-        </svg>
-      </div>
+    <section className="relative w-full h-[90vh] flex items-center">
+      {/* Background image */}
+      <img
+        src={hero}
+        alt="Hero background"
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-black/40"></div>
 
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* LEFT SIDE - Replaced h2 with logo */}
-          <div className="space-y-6 text-center lg:text-left">
-            <img
-              src={logo}
-              alt="Company Logo"
-              className="
-                   mx-auto lg:mx-0 
-                  w-16 h-16 rounded-full       
-                  sm:w-28 sm:h-28 sm:rounded-full 
-                  md:w-40 md:h-auto md:rounded-none 
-                  object-contain"
-            />
-            <p className="text-base sm:text-lg text-gray-600 max-w-md mx-auto lg:mx-0 lg:text-5xl">
-              We believe that integrated medical solutions present highly
-              <br />
-              valuable economic and social development resources within sports,
-              events, communities, and individual care settings.
-            </p>
-          </div>
+      {/* Content */}
+      <div className="relative container mx-auto px-4 z-10 text-center sm:text-left">
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight">
+          Dedicated Medical Care
+          <br />
+          <AnimatePresence mode="wait">
+            <motion.span
+              key={words[index]} // unique key for animation
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.6 }}
+              className="text-sky-400 inline-block ml-2"
+            >
+              {words[index]}
+            </motion.span>
+          </AnimatePresence>
+        </h1>
 
-          {/* RIGHT SIDE IMAGE */}
-          <div className="relative">
-            <img
-              src={hero}
-              alt="Wellness care"
-              className="w-full h-auto rounded-lg shadow-lg"
-            />
-          </div>
-        </div>
+        <p className="mt-6 text-base sm:text-lg text-gray-100 max-w-xl">
+          Welcome to PROMED, your trusted partner in comprehensive healthcare
+          services. We are committed to providing top-notch medical care with a
+          focus on patient well-being and satisfaction, in sports, events,
+          communities, and individual care settings.
+        </p>
 
-        {/* CTA BUTTON */}
-        <div className="flex flex-col sm:flex-row gap-4 mt-12 justify-center lg:justify-start">
+        {/* CTA button */}
+        <div className="mt-8">
           <a
             href="https://wa.me/+254115294467"
-            className="bg-promed-green-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-promed-green-600 flex items-center justify-center space-x-2 w-full sm:w-auto"
+            className="inline-flex items-center bg-sky-600 text-white px-6 py-3 rounded-md font-semibold hover:bg-sky-700"
           >
-            <span className="bg-sky-600 border-3 px-8 py-3">
-              Book Appointment
-            </span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5 mr-2"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M3 5h2l3.5 7-1.5 4H6v2h12v-2h-1.5l-1.5-4L19 5h2"
+              />
+            </svg>
+            Book Appointment
           </a>
         </div>
       </div>

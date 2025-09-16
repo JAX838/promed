@@ -35,11 +35,11 @@ const WhoWeAre = () => {
             Mentorship, Care and Innovation
           </h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            PROMED is more than a healthcare provider. We are partner in health,
-            sports, and community development. By combining medical services,
-            chronic illness care, health education and sports empowerment,
-            PROMED represents a new model of sustainable healthcare delivery in
-            Africa
+            PROMED is more than a healthcare provider. We are partners in
+            health, sports, and community development. By combining medical
+            services, chronic illness care, health education and sports
+            empowerment, PROMED represents a new model of sustainable healthcare
+            delivery in Africa
           </p>
           <p className="text-gray-700 mb-6 leading-relaxed">
             Our Vision is to be Africa's most trusted healthcare partner,

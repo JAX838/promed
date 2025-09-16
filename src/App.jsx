@@ -6,6 +6,7 @@ import ServicesPage from "./pages/ServicesPage.jsx";
 import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
 import WhatsAppButton from "./pages/WhatsAppButton.jsx";
+import WhyChooseUs from "./components/WhyChooseUs.jsx";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/services" element={<ServicesPage />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/why-choose" element={<WhyChooseUs />} />
           </Routes>
         </main>
 
