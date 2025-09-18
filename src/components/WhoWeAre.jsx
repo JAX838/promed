@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import foundersImg from "../assets/founders.png"; // replace with your image path
-
+import foundersImg from "../assets/4.jpg"; // replace with your image path
+import { Link } from "react-router-dom";
 const WhoWeAre = () => {
   return (
     <section className="py-16 px-6 lg:px-20 bg-[#e6f1ec]">
@@ -47,13 +47,15 @@ const WhoWeAre = () => {
             and more productive lives through accessible, innovative, nad
             sustainable healthcare solutions.
           </p>
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="bg-blue-400 text-white px-5 py-2 rounded-md hover:bg-blue-500 transition"
-          >
-            Learn More
-          </motion.button>
+          <Link to="/about">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-blue-400 text-white px-5 py-2 rounded-md hover:bg-blue-500 transition"
+            >
+              Learn More
+            </motion.button>
+          </Link>
         </motion.div>
       </div>
     </section>

@@ -9,7 +9,7 @@ const Footer = () => {
         {/* Company Info */}
         <div>
           <h2 className="text-2xl font-bold mb-4">PROMED</h2>
-          <p className="text-gray-300 mb-6">
+          <p className="text-black mb-6">
             Dedicated to providing compassionate care, professional training,
             and healthcare support services with excellence.
           </p>
@@ -18,27 +18,27 @@ const Footer = () => {
               href="#"
               className="bg-white/10 p-2 rounded-full hover:bg-blue-500 transition"
             >
-              <Facebook className="w-5 h-5" />
+              <Facebook className="w-5 h-5 text-blue-950" />
             </a>
             <a
               href="#"
               className="bg-white/10 p-2 rounded-full hover:bg-blue-500 transition"
             >
-              <Twitter className="w-5 h-5" />
+              <Twitter className="w-5 h-5 text-blue-950" />
             </a>
             <a
               href="#"
               className="bg-white/10 p-2 rounded-full hover:bg-blue-500 transition"
             >
-              <Linkedin className="w-5 h-5" />
+              <Linkedin className="w-5 h-5 text-blue-950" />
             </a>
           </div>
         </div>
 
         {/* Quick Links */}
         <div>
-          <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
-          <ul className="space-y-3 text-gray-300">
+          <h3 className="text-xl font-semibold mb-4 ">Quick Links</h3>
+          <ul className="space-y-3 text-black">
             <li>
               <Link to="/about" className="hover:text-blue-400 transition">
                 About Us
@@ -65,15 +65,15 @@ const Footer = () => {
         {/* Contact Info */}
         <div>
           <h3 className="text-xl font-semibold mb-4">Contact Info</h3>
-          <ul className="space-y-4 text-gray-300">
+          <ul className="space-y-4 text-black">
             <li className="flex items-center gap-3">
-              <Phone className="w-5 h-5 text-blue-400" /> +254 115294467
+              <Phone className="w-5 h-5 text-black" /> +254 115294467
             </li>
             <li className="flex items-center gap-3">
-              <Mail className="w-5 h-5 text-blue-400" /> promedhc07@gmail.com
+              <Mail className="w-5 h-5 text-black" /> promedhc07@gmail.com
             </li>
             <li className="flex items-center gap-3">
-              <MapPin className="w-5 h-5 text-blue-400" /> Nairobi, Kenya
+              <MapPin className="w-5 h-5 text-black" /> Nairobi, Kenya
             </li>
           </ul>
         </div>
