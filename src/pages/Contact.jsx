@@ -6,12 +6,12 @@ const contactInfo = [
   {
     icon: <Phone className="w-6 h-6 text-blue-500" />,
     title: "Phone",
-    detail: "+254 743379955",
+    detail: "+254 115294467",
   },
   {
     icon: <Mail className="w-6 h-6 text-green-500" />,
     title: "Email",
-    detail: "mongarebrian@gmail.com.com",
+    detail: "promedhc07@gmail.com",
   },
   {
     icon: <MapPin className="w-6 h-6 text-red-500" />,
