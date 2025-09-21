@@ -80,8 +80,9 @@ const Footer = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-white/10 mt-12 py-6 text-center text-gray-400 text-sm">
-        © {new Date().getFullYear()} PROMED Inc. All Rights Reserved.
+      <div className="border-t border-white/10 mt-12 py-6 text-center text-black text-sm">
+        © {new Date().getFullYear()} PROMED Inc. All Rights Reserved. Maroots
+        did it.
       </div>
     </footer>
   );

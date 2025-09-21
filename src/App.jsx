@@ -7,7 +7,7 @@ import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
 import WhatsAppButton from "./pages/WhatsAppButton.jsx";
 import WhyChooseUs from "./components/WhyChooseUs.jsx";
-
+import ServiceDetails from "./components/ServiceDetails.jsx";
 function App() {
   return (
     <Router>
@@ -18,6 +18,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<ServicesPage />} />
+            <Route path="/services/:id" element={<ServiceDetails />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/why-choose" element={<WhyChooseUs />} />
