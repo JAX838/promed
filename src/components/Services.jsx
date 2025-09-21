@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import services from "./servicesData.jsx";
+import services from "./ServicesData.jsx";
 
 const container = {
   hidden: { opacity: 0 },

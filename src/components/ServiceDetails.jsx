@@ -1,6 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import services from "./servicesData.jsx";
+import services from "./ServicesData.jsx";
 
 export default function ServiceDetails() {
   const { id } = useParams();
